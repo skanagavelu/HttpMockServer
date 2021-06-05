@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>httpResponseMock</artifactId>
+	<artifactId>httpMockServer</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>httpResponseMock</name>
 	<description>Http response mock server</description>
