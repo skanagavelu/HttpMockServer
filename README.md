@@ -1,7 +1,7 @@
 # HttpResponseMockServer
 
-Read about what is Mock server and its usecases at <a href="https://www.mock-server.com/#what-is-mockserver">here</a>
-But my aim is keep it simple, with zero code at both the Client and Server; only with configuration changes.
+Read about what is Mock server and its usecases at <a href="https://www.mock-server.com/#what-is-mockserver">here</a>.<BR>
+But my aim is to keep it simple, with zero code at both the Client and Server; only with configuration changes.
 
 This server is a BLACK BOX, user need not to know the language it is implemented, since they were never going to make changes to it.
 Whereas end user will be going to create request config file for each different request at the same system it is running.
@@ -9,7 +9,7 @@ Whereas end user will be going to create request config file for each different 
 Similarly the client side also no code changes required. There is only three config changes required at client.
 1. Mock server host
 2. Mock server port
-3. Request config File location at Mock server in HTTP Header.
+3. Request config file location at Mock server in HTTP Header.
 
 For each request has config file location at mock server.
 Mock server loads the config, it understads the response to be returned, response headers to be added for the that request via config file and build those 
