@@ -17,21 +17,11 @@ Similarly the client side also no code changes required. There is only three con
 2. Mock server port
 3. Request config file location at Mock server in HTTP Header.
 
-For each request has config file location at mock server.
-Mock server loads the config, it understads the response to be returned, response headers to be added for the that request via config file and build those 
+For each request has a request config file location at mock server.
+Mock server loads this config, and it understads the what response to be returned, response headers to be added for the that request via config file and build those 
 and return it back to the request. 
-
-In future the request config file configuration will support callback payload, proxy configuration and many more.
-The request config file is json file and its payload syntax is defined in this project.
-
-Each request config file will create a session object to store session specific information, e.g.) You want to return different response for every fourth request.
-
-In future we will add template engine to fill dynamic values in the response via request OR from DB (file system specific).
-But I will ensure only configuration changes and no code changes at either side.
-
-
   
-Sample request config file which contains mainly three sections:
+Request config file which contains mainly three sections:
 1.   serverConfig    : Server related properties, e.g.) if you want delay the rsponse for sometime, schedule a callback, ..
 2.   responseConfig  : Response related properties, e.g.) Response content file location and headers
 3.   callbackConfig  : If there is callback need for you request, those information goes here.
@@ -69,5 +59,12 @@ So all we need now is to add request config file path as header "Http-Mock-Confi
   -H 'postman-token: 91e7b8a4-422e-13c1-589e-7aa8d85fc28b'
 </PRE>    
   
-  
+In future the request config file configuration will support callback payload, proxy configuration and many more.
+The request config file is json file and its payload syntax is defined in this project.
+
+Each request config file will create a session object to store session specific information, e.g.) You want to return different response for every fourth request.
+
+In future we will add template engine to fill dynamic values in the response via request OR from DB (file system specific).
+But I will ensure only configuration changes and no code changes at either side.
+   
 [![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/ed54024760a89d8b405e)
