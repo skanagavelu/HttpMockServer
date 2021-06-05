@@ -1,4 +1,4 @@
-# HttpResponseMockServer
+# HttpMockServer
 
 Read about what is Mock server and its usecases at <a href="https://www.mock-server.com/#what-is-mockserver">here</a>.<BR>
 But my aim is to keep it simple so that QA engineers can setup integration tests; with zero code at both the Client and Server; only with configuration changes.
