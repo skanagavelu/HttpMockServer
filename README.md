@@ -25,7 +25,12 @@ But I will ensure only configuration changes and no code changes at either side.
 
 
   
-Sample request config file
+Sample request config file which contains mainly three sections:
+1.   serverConfig    : Server related properties, e.g.) if you want delay the rsponse for sometime, schedule a callback, ..
+2.   responseConfig  : Response related properties, e.g.) Response content file location and headers
+3.   callbackConfig  : If there is callback need for you request, those information goes here.
+  
+  
 <PRE>  
 {
   "responseConfig": {
@@ -41,7 +46,12 @@ Sample request config file
 
 <code>responseFilePath</code> is the file that contains payload to be returned for the request.
 
-So all we need now is to add request config file path as header "Http-Mock-Config-File"  
+So all we need now is to add request config file path as header "Http-Mock-Config-File" like below
   
+<PRE>   
+  curl -X GET \
+  http://localhost:8080/helloworld \
+  -H 'http-mock-config-file: /tmp/httpResponseMock/helloworld.config' \
+</PRE>    
   
   
