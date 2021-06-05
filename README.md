@@ -22,9 +22,10 @@ Mock server loads this config, and it understads the what response to be returne
 and return it back to the request. 
   
 Request config file which contains mainly three sections:
-1.   serverConfig    : Server related properties, e.g.) if you want delay the rsponse for sometime, schedule a callback, ..
-2.   responseConfig  : Response related properties, e.g.) Response content file location and headers
-3.   callbackConfig  : If there is callback need for you request, those information goes here.
+1.   serverConfig    : Server related properties, 
+     e.g.) if you want delay the response for sometime, or schedule a callback, or every Nth request should refer different payload.
+2.   responseConfig  : Response related properties, e.g.) Response content file location, response headers
+3.   callbackConfig  : If there is a callback needed for your request, those information goes here.
   
   
 <PRE>  
