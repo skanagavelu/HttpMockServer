@@ -1,7 +1,7 @@
 # HttpResponseMockServer
 
 Read about what is Mock server and its usecases at <a href="https://www.mock-server.com/#what-is-mockserver">here</a>.<BR>
-But my aim is to keep it simple, with zero code at both the Client and Server; only with configuration changes.
+But my aim is to keep it simple so that QA engineers can setup integration tests; with zero code at both the Client and Server; only with configuration changes.
 
 This server is a BLACK BOX, user need not to know the language it is implemented, since they were never going to make changes to it.
 Whereas end user will be going to create request config file for each different request at the same system it is running.
