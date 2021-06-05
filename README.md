@@ -61,4 +61,4 @@ So all we need now is to add request config file path as header "Http-Mock-Confi
 </PRE>    
   
   
-[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/2c99b956fc6e7b24157d)
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/ed54024760a89d8b405e)
