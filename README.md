@@ -23,3 +23,25 @@ Each request config file will create a session object to store session specific 
 In future we will add template engine to fill dynamic values in the response via request OR from DB (file system specific).
 But I will ensure only configuration changes and no code changes at either side.
 
+
+  
+Sample request config file
+<PRE>  
+{
+  "responseConfig": {
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "responseFilePath": "/tmp/httpResponseMock/helloworld.response.config"
+  },
+  "serverConfig" : {},
+  "callbackConfig" : {}
+}
+</PRE>  
+
+<code>responseFilePath</code> is the file that contains payload to be returned for the request.
+
+So all we need now is to add request config file path as header "Http-Mock-Config-File"  
+  
+  
+  
