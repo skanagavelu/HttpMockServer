@@ -58,6 +58,15 @@ So all we need now is to add request config file path as header "Http-Mock-Confi
   curl -X GET \
   http://localhost:8080/helloworld \
   -H 'http-mock-config-file: /tmp/httpResponseMock/helloworld.config' \
+  
+  
+  curl -X GET \
+  http://localhost:8080/healthcheck \
+  -H 'postman-token: d0855a3f-ceef-4496-698e-6da0835c0c91' \
+  
+  curl -X GET \
+  http://localhost:8080/version \
+  -H 'postman-token: 91e7b8a4-422e-13c1-589e-7aa8d85fc28b'
 </PRE>    
   
   
